@@ -1,3 +1,14 @@
+html {
+  box-sizing: border-box;
+}
+
+/* Используется для рещения всех соответсвий с системами */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
   --primary-text-black: #212121;
   --primary-text-gray: #757575;
@@ -13,6 +24,24 @@ body {
   font-weight: normal;
   letter-spacing: 0.03em;
   color: var(--primary-text-black);
+}
+
+.list {
+  list-style: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid var(--background-hero);
+}
+
+.header {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .logo {
@@ -52,16 +81,15 @@ body {
   color: var(--primary-text-gray);
 }
 
-.list {
-  list-style: none;
-}
-
 .hero {
   color: var(--white);
   background-color: var(--background-hero);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 94px;
+  padding: 200px 220px;
+  align-items: center;
 }
 
 .hero-title {
@@ -71,13 +99,20 @@ body {
 }
 
 .hero-button {
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-
+  display: inline-block;
   color: var(--white);
   background-color: var(--text-accent);
+  font-weight: 700;
+  font-size: 16px;
+  font: inherit;
+  line-height: 1.87;
+  text-decoration: none;
+  list-style-type: none;
+
+  border-radius: 4px;
+  padding: 15px 32px;
+  min-width: 200px;
+  border: 1px solid transparent;
 }
 
 .title {
