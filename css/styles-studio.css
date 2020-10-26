@@ -16,7 +16,8 @@ h5,
 h6,
 ul,
 p,
-li {
+li,
+a {
   margin: 0;
 }
 
@@ -49,7 +50,7 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid var(--background-hero);
+  /* outline: 1px solid var(--background-hero); */
 }
 
 .list {
@@ -218,11 +219,6 @@ img {
 .div-footer {
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.div-footer .item {
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .footer-address {
