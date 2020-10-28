@@ -133,7 +133,7 @@ body {
 }
 
 .section {
-  margin-bottom: 94px;
+  padding-top: 94px;
 }
 
 .hero {
@@ -233,10 +233,11 @@ body {
 .team-padding {
   display: flex;
   padding-bottom: 50px;
+  justify-content: center;
 }
 
 .team-item {
-  flex-basis: (100% /4 -30px);
+  width: 270px;
   margin-bottom: 30px;
   font-weight: 500;
   font-size: 16px;
@@ -244,6 +245,8 @@ body {
 
   text-align: center;
   color: var(--primary-text-black);
+  background-color: var(--white);
+  border: 1px solid transparent;
 }
 
 .team-item:not(:last-child) {
