@@ -79,8 +79,6 @@ img {
 .site-nav {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 /* только первый */
@@ -91,6 +89,11 @@ img {
 /* всем кроме последнего */
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
+}
+
+.site-nav .item {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contacts-nav {
